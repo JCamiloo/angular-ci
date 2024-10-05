@@ -17,13 +17,15 @@ describe('AppComponent', () => {
   it(`should have the 'angular-ci' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-ci');
+    expect(app.title).toEqual('angular-ci2');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-ci');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, angular-ci2s'
+    );
   });
 });

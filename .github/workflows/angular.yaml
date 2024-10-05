@@ -17,4 +17,9 @@ jobs:
         run: npm install
 
       - name: Execute unit tests
+        id: test
         run: npm run test
+
+      - name: Deploy
+        if: steps.test.outcome == 'success'
+        run: ls
