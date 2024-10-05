@@ -17,7 +17,7 @@ describe('AppComponent', () => {
   it(`should have the 'angular-ci' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-ci2');
+    expect(app.title).toEqual('angular-ci');
   });
 
   it('should render title', () => {
@@ -25,7 +25,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Hello, angular-ci2s'
+      'Hello, angular-ci'
     );
   });
 });
